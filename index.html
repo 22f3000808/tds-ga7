@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quarterly Earnings – Interactive RevealJS Deck</title>
+
+    <!-- Core Reveal.js styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css" />
+    <!-- Theme (change to: beige, black, blood, league, moon, night, serif, simple, sky, solarized, white) -->
+    <link id="theme" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/league.css" />
+    <!-- Code highlighting theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css" />
+
+    <style>
+      /* Optional: small visual tweaks */
+      .reveal section h1, .reveal section h2, .reveal section h3 { letter-spacing: 0.2px; }
+      .reveal .attribution { font-size: 0.6em; opacity: 0.75; margin-top: 1rem; }
+      .reveal small.kicker { text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+      @media (max-width: 900px) { .two-col { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Title -->
+        <section data-background-gradient="radial-gradient(#0d1b2a, #000)" data-transition="fade">
+          <small class="kicker">Q2 FY2025</small>
+          <h1>Quarterly Earnings Report</h1>
+          <p>Major Financial Institution</p>
+          <p>
+            <small>Prepared by:
+              <strong>22f3000808@ds.study.iitm.ac.in</strong>
+            </small>
+          </p>
+          <aside class="notes">
+            Welcome everyone. Use this opener to set context and timing. Remind audience about agenda and that a Q&amp;A will follow.
+          </aside>
+        </section>
+
+        <!-- Agenda (fragments demo) -->
+        <section>
+          <h2>Agenda</h2>
+          <ul>
+            <li class="fragment fade-in">Headline results</li>
+            <li class="fragment fade-in">Business segment performance</li>
+            <li class="fragment fade-in">Capital, liquidity &amp; risk</li>
+            <li class="fragment fade-in">Guidance &amp; outlook</li>
+            <li class="fragment fade-in">Q&amp;A</li>
+          </ul>
+          <aside class="notes">Use right arrow to advance points one by one. Keep tempo brisk.</aside>
+        </section>
+
+        <!-- Markdown slide -->
+        <section data-markdown data-separator-notes="^Notes:" data-transition="slide">
+          <textarea data-template>
+## Results Snapshot *(Markdown slide)*
+
+- **Revenue:** $8.4B  
+- **Net Income:** $1.2B  
+- **Diluted EPS:** $1.38  
+- **ROE (TTM):** **16.4%**  
+- **CET1 Ratio:** **13.1%**  
+- **Efficiency Ratio:** **52%**
+
+Notes:
+Speak to mix: deposit growth, NIM trends, and fee-based momentum.
+          </textarea>
+        </section>
+
+        <!-- Math equations (KaTeX) -->
+        <section>
+          <h2>Key Financial Formulae</h2>
+          <div class="two-col">
+            <div>
+              <p><strong>NPV</strong>:</p>
+              <p>\[ \mathrm{NPV} = \sum_{t=1}^{T} \frac{CF_t}{(1+r)^t} - C_0 \]</p>
+              <p><strong>CAGR</strong>:</p>
+              <p>\[ \mathrm{CAGR} = \left(\tfrac{V_f}{V_i}\right)^{1/n} - 1 \]</p>
+            </div>
+            <div>
+              <p><strong>EPS</strong>:</p>
+              <p>\[ \mathrm{EPS} = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Avg. Shares}} \]</p>
+              <p><strong>VaR (variance-cov)</strong> (1-day):</p>
+              <p>\[ \mathrm{VaR}_{\alpha} = z_{\alpha} \cdot \sigma_P \cdot \sqrt{\Delta t} \]</p>
+            </div>
+          </div>
+          <aside class="notes">Math is rendered via KaTeX. Call out assumptions behind discount rates and share count methodology.</aside>
+        </section>
+
+        <!-- Code with syntax highlighting -->
+        <section>
+          <h2>Code Sample: CAGR Calculation (Python)</h2>
+          <pre><code class="language-python">def cagr(ending, beginning, years):
+    """Compound Annual Growth Rate"""
+    return (ending / beginning) ** (1/years) - 1
+
+print("CAGR:", round(cagr(8.4, 6.7, 3)*100, 2), "%")
+</code></pre>
+          <p class="attribution">Syntax highlighting by highlight.js</p>
+          <aside class="notes">Use this to show how we validate KPIs in notebooks/pipelines.</aside>
+        </section>
+
+        <!-- Fragments on table rows -->
+        <section>
+          <h2>Segment Performance</h2>
+          <table>
+            <thead>
+              <tr><th>Segment</th><th>YoY Revenue</th><th>Commentary</th></tr>
+            </thead>
+            <tbody>
+              <tr class="fragment"><td>Retail Banking</td><td>+6%</td><td>NIM expansion, card spend up</td></tr>
+              <tr class="fragment"><td>Wealth Mgmt</td><td>+9%</td><td>AUM inflows, advisory fees</td></tr>
+              <tr class="fragment"><td>Investment Banking</td><td>-3%</td><td>Muted ECM; DCM resilient</td></tr>
+            </tbody>
+          </table>
+          <aside class="notes">Reveal rows selectively to focus discussion.</aside>
+        </section>
+
+        <!-- Speaker notes only demo -->
+        <section>
+          <h2>Guidance &amp; Outlook</h2>
+          <ul>
+            <li>FY2025 revenue growth mid-single digits</li>
+            <li>Expense discipline with targeted tech investments</li>
+            <li>Capital return consistent with CET1 targets</li>
+          </ul>
+          <aside class="notes">If asked, reiterate macro assumptions: GDP baseline, rate path, and credit cost range.</aside>
+        </section>
+
+        <!-- Closing with link placeholder for GitHub Pages -->
+        <section data-background="#0b132b" data-background-transition="zoom">
+          <h2>Thank You</h2>
+          <p>Deck URL (GitHub Pages):<br/>
+            <a href="https://&lt;your-username&gt;.github.io/earnings-deck/" target="_blank">https://&lt;your-username&gt;.github.io/earnings-deck/</a>
+          </p>
+          <p><small>Press <kbd>S</kbd> to open speaker notes while presenting.</small></p>
+          <aside class="notes">Invite questions. Offer follow-up materials and data room access.</aside>
+        </section>
+      </div>
+    </div>
+
+    <!-- Reveal.js core -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+    <!-- Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.js"></script>
+
+    <script>
+      Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        transition: 'fade',
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+        keyboard: true,
+        // Optional: enable overview map with ESC
+        overview: true
+      });
+    </script>
+  </body>
+</html>
