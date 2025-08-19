@@ -6,5 +6,5 @@ This repository contains a professional-grade Seaborn heatmap that visualizes cu
 
 ## Files
 - `chart.py`: Python script to generate the heatmap
-- `Chart.png`: Final visualization (512x512 pixels)
+- `chart.png`: Final visualization (512x512 pixels)
 - `README.md`: Project documentation
