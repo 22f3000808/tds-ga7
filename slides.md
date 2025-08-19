@@ -39,7 +39,7 @@ style: |
 
 ---
 
-<!-- _backgroundImage: url('https://www.pexels.com/photo/stunning-view-of-mount-fuji-in-springtime-33341985/') -->
+<!-- _backgroundImage: url('https://drive.google.com/file/d/197KV-sQukSJr2gjASqVeZIMXhjWZX8DB/view?usp=sharing') -->
 
 # Features
 
