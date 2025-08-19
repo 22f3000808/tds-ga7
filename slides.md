@@ -39,7 +39,7 @@ style: |
 
 ---
 
-<!-- _backgroundImage: url('image.png') -->
+<!-- backgroundImage: url('image.png') -->
 
 # Features
 
