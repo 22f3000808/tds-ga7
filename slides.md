@@ -39,7 +39,7 @@ style: |
 
 ---
 
-<!-- _backgroundImage: url('https://drive.google.com/file/d/197KV-sQukSJr2gjASqVeZIMXhjWZX8DB/view?usp=sharing') -->
+<!-- _backgroundImage: url('image.png') -->
 
 # Features
 
