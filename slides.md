@@ -39,7 +39,7 @@ style: |
 
 ---
 
-<!-- backgroundImage: url('image.png') -->
+backgroundImage: url('https://source.unsplash.com/1600x900/?technology')
 
 # Features
 
