@@ -38,8 +38,9 @@ style: |
 5. Q&A
 
 ---
+<!-- Background image -->
 
-backgroundImage: url('image.png')
+![bg](image.png)
 
 # Features
 
